@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>DTLOT</title>
+    <script src="build/build.js"></script>
+    <script>require('app');</script>
+    <style>
+      #bg {
+        position: absolute;
+        left: 0;
+        top: 0
+      }
+      #cover {
+        position: absolute;
+        z-index: 100;
+        height: 712px;
+        width: 530px;
+        top: 40px;
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -370px;
+      }
+      #box {
+        background-color: white;
+        opacity: 0.6;
+        width: 530px;
+        height: 530px;
+        margin-bottom: 13px;
+      }
+      #image {
+        left: 20px;
+        top: 20px;
+        width: 490px;
+        height: 490px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cover">
+      <div id="box"></div>
+      <img id="image" src="images/cover.jpg" />
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F61482123%3Fsecret_token%3Ds-TwBPG&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"></iframe>
+    </div>
+    <img id="bg" src="images/bg.jpg" />
+  </body>
+</html>
