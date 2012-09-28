@@ -1,7 +1,0 @@
-{
-  "name": "app",
-  "dependencies": {
-    "component/jquery": "*"
-  },
-  "scripts": ["index.js"]
-}

@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 $(function() {
   var bg = {
     el: $('#bg'),
