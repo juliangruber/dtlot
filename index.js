@@ -4,23 +4,32 @@ $(function() {
     origWidth: 2248,
     origHeight: 1490
   };
+  var prop = 2248/1490;
   resize();
-  $(window).resize(resize);
+  var win = $(window);
+  win.resize(resize);
 
   var resizing = false;
   function resize() {
     if (resizing) return;
     resizing = true;
     var win = $(window);
-    var prop = bg.origWidth/bg.origHeight;
-    while(bg.el.width()>win.width()&&bg.el.height()>win.height()) {
-      bg.el.width(bg.el.width()-1);
-      bg.el.height(bg.el.width()/prop);
+    var curWidth = bg.el.width();
+    var curHeight = bg.el.height();
+    var winWidth = win.width();
+    var winHeight = win.height();
+    
+    while(curWidth > winWidth && curHeight > winHeight) {
+      curWidth--;
+      curHeight = curWidth/prop;
     }
-    while(bg.el.width()<win.width()||bg.el.height()<win.height()) {
-      bg.el.width(bg.el.width()+1);
-      bg.el.height(bg.el.width()/prop);
+    while(curWidth < winWidth || curHeight < winHeight) {
+      curWidth++;
+      curHeight = curWidth/prop;
     }
+    
+    bg.el.width(curWidth);
+    bg.el.height(curHeight);
     resizing = false;
   }
 });

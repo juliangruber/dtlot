@@ -12,36 +12,59 @@
       #cover {
         position: absolute;
         z-index: 100;
-        height: 712px;
-        width: 530px;
-        top: 40px;
+        height: 590px;
+        width: 411px;
         left: 50%;
         top: 50%;
-        margin-left: -100px;
-        margin-top: -370px;
+        margin-left: 0;
+        margin-top: -330px;
       }
       #box {
         background-color: white;
-        opacity: 0.6;
-        width: 530px;
-        height: 530px;
+        opacity: 0.55;
+        width: 410px;
+        height: 410px;
         margin-bottom: 13px;
       }
       #image {
-        left: 20px;
-        top: 20px;
-        width: 490px;
-        height: 490px;
+        left: 15px;
+        top: 15px;
+        width: 380px;
+        height: 380px;
         position: absolute;
+      }
+      iframe {
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+        font-size: 80%;
+        margin-left: 8px;
+      }
+      p a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 7px;
+      }
+      p.fb a  {
+        margin-left: 3px;
+        text-transform: none;
+      }
+      p.fb {
       }
     </style>
   </head>
   <body>
     <div id="cover">
       <div id="box"></div>
-      <img id="image" src="images/cover.jpg" />
+      <img id="image" src="images/cover_small.jpg" />
       <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F61482123%3Fsecret_token%3Ds-TwBPG&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"></iframe>
+      <p>Produced by Jan Kerscher <a href="http://www.ghostcityrecordings.com/">//  Ghost City Recordings</a></p>
+      <p>Mastered by Philipp Welsing <a href="http://www.original-mastering.com/">// Original Mastering</a></p>
+      <p class="fb">Follow us on <a href="https://www.facebook.com/defythelawsoftradition">Facebook</a></p>
     </div>
-    <img id="bg" src="images/bg.jpg" />
+    <img id="bg" src="images/bg_desat_small.jpg" />
   </body>
 </html>
